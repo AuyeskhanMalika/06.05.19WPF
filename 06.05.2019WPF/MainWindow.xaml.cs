@@ -42,7 +42,7 @@ namespace _06._05._2019WPF
             }
             catch
             {
-                MessageBox.Show("Такого города не существует!");
+                MessageBox.Show("This city doesn't exist!");
                 return;
             }
 
@@ -97,21 +97,21 @@ namespace _06._05._2019WPF
             dateFifth.Text = weather.Forecast.ForecastDay[FIFTH_DAY].Date.Value.DayOfWeek.ToString() + "\n" + weather.Forecast.ForecastDay[FIFTH_DAY].Date.Value.ToShortDateString();
             dateSixth.Text = weather.Forecast.ForecastDay[SIXTH_DAY].Date.Value.DayOfWeek.ToString() + "\n" + weather.Forecast.ForecastDay[SIXTH_DAY].Date.Value.ToShortDateString();
 
-            humidity.Text = "Влажность - " + weather.Forecast.ForecastDay[DAY].Day.AverageHumidity.ToString() + "%";
-            humidityFirst.Text = "Влажность - " + weather.Forecast.ForecastDay[FIRST_DAY].Day.AverageHumidity.ToString() + "%";
-            humiditySecond.Text = "Влажность - " + weather.Forecast.ForecastDay[SECOND_DAY].Day.AverageHumidity.ToString() + "%";
-            humidityThird.Text = "Влажность - " + weather.Forecast.ForecastDay[THIRD_DAY].Day.AverageHumidity.ToString() + "%";
-            humidityFourth.Text = "Влажность - " + weather.Forecast.ForecastDay[FOURTH_DAY].Day.AverageHumidity.ToString() + "%";
-            humidityFifth.Text = "Влажность - " + weather.Forecast.ForecastDay[FIFTH_DAY].Day.AverageHumidity.ToString() + "%";
-            humiditySixth.Text = "Влажность - " + weather.Forecast.ForecastDay[SIXTH_DAY].Day.AverageHumidity.ToString() + "%";
+            humidity.Text = "Humidity - " + weather.Forecast.ForecastDay[DAY].Day.AverageHumidity.ToString() + "%";
+            humidityFirst.Text = "Humidity - " + weather.Forecast.ForecastDay[FIRST_DAY].Day.AverageHumidity.ToString() + "%";
+            humiditySecond.Text = "Humidity - " + weather.Forecast.ForecastDay[SECOND_DAY].Day.AverageHumidity.ToString() + "%";
+            humidityThird.Text = "Humidity - " + weather.Forecast.ForecastDay[THIRD_DAY].Day.AverageHumidity.ToString() + "%";
+            humidityFourth.Text = "Humidity - " + weather.Forecast.ForecastDay[FOURTH_DAY].Day.AverageHumidity.ToString() + "%";
+            humidityFifth.Text = "Humidity - " + weather.Forecast.ForecastDay[FIFTH_DAY].Day.AverageHumidity.ToString() + "%";
+            humiditySixth.Text = "Humidity - " + weather.Forecast.ForecastDay[SIXTH_DAY].Day.AverageHumidity.ToString() + "%";
 
-            windSpeed.Text = "Скорость ветра - " + Convert.ToInt32(weather.Forecast.ForecastDay[DAY].Day.WindSpeed).ToString() + "км/ч";
-            windSpeedFirst.Text = "Скорость ветра - " + Convert.ToInt32(weather.Forecast.ForecastDay[FIRST_DAY].Day.WindSpeed).ToString() + "км/ч";
-            windSpeedSecond.Text = "Скорость ветра - " + Convert.ToInt32(weather.Forecast.ForecastDay[SECOND_DAY].Day.WindSpeed).ToString() + "км/ч";
-            windSpeedThird.Text = "Скорость ветра - " + Convert.ToInt32(weather.Forecast.ForecastDay[THIRD_DAY].Day.WindSpeed).ToString() + "км/ч";
-            windSpeedFourth.Text = "Скорость ветра - " + Convert.ToInt32(weather.Forecast.ForecastDay[FOURTH_DAY].Day.WindSpeed).ToString() + "км/ч";
-            windSpeedFifth.Text = "Скорость ветра - " + Convert.ToInt32(weather.Forecast.ForecastDay[FIFTH_DAY].Day.WindSpeed).ToString() + "км/ч";
-            windSpeedSixth.Text = "Скорость ветра - " + Convert.ToInt32(weather.Forecast.ForecastDay[SIXTH_DAY].Day.WindSpeed).ToString() + "км/ч";
+            windSpeed.Text = "Wind speed - " + Convert.ToInt32(weather.Forecast.ForecastDay[DAY].Day.WindSpeed).ToString() + "км/ч";
+            windSpeedFirst.Text = "Wind speed - " + Convert.ToInt32(weather.Forecast.ForecastDay[FIRST_DAY].Day.WindSpeed).ToString() + "км/ч";
+            windSpeedSecond.Text = "Wind speed - " + Convert.ToInt32(weather.Forecast.ForecastDay[SECOND_DAY].Day.WindSpeed).ToString() + "км/ч";
+            windSpeedThird.Text = "Wind speed - " + Convert.ToInt32(weather.Forecast.ForecastDay[THIRD_DAY].Day.WindSpeed).ToString() + "км/ч";
+            windSpeedFourth.Text = "Wind speed - " + Convert.ToInt32(weather.Forecast.ForecastDay[FOURTH_DAY].Day.WindSpeed).ToString() + "км/ч";
+            windSpeedFifth.Text = "Wind speed - " + Convert.ToInt32(weather.Forecast.ForecastDay[FIFTH_DAY].Day.WindSpeed).ToString() + "км/ч";
+            windSpeedSixth.Text = "Wind speed - " + Convert.ToInt32(weather.Forecast.ForecastDay[SIXTH_DAY].Day.WindSpeed).ToString() + "км/ч";
         }
     }
 }
